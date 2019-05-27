@@ -5,4 +5,30 @@
     xmlns:local="using:Uno.Cognitive"
     RequestedTheme="Light">
 
+    <Application.Resources>
+        <local:IconConverter x:Key="Converter" />
+        <local:ImplicitDataTemplateConverter x:Key="ImplicitDataTemplateConverter" />
+
+        <DataTemplate x:Key="SectionViewModel">
+            <TextBlock Text="{Binding Name}"></TextBlock>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ImageLoadingViewModel">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <TextBox Header="Please, enter the URL of an image" Text="{Binding ImageUrl, Mode=TwoWay}" />
+                <Image Grid.Row="1" Source="{Binding ImageUrl}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="OtherViewModel">
+            <StackPanel >
+                <TextBox Text="{Binding ImageUrl, Mode=TwoWay}" />
+            </StackPanel>
+        </DataTemplate>
+
+    </Application.Resources>
 </Application>

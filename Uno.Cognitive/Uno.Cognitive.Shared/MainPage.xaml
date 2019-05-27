@@ -7,7 +7,30 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		<TextBlock Text="Hello, world !" Margin="20" FontSize="30" />
-    </Grid>
+    <Page.DataContext>
+        <local:MainViewModel />
+    </Page.DataContext>
+    <NavigationView MenuItemsSource="{Binding Sections}" SelectedItem="{Binding SelectedSection, Mode=TwoWay}">
+        <NavigationView.MenuItemTemplate>
+            <DataTemplate>
+                <Grid HorizontalAlignment="Left"
+                      Height="40"
+                      Margin="-16,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="48" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Viewbox Grid.Column="0"
+                             Margin="16,12">
+                        <SymbolIcon Symbol="{Binding Icon, Converter={StaticResource Converter}}" />
+                    </Viewbox>
+                    <ContentControl Content="{Binding Name}"
+                                      Grid.Column="1"
+                                      VerticalAlignment="Center"/>
+                </Grid>            </DataTemplate>
+        </NavigationView.MenuItemTemplate>
+
+        <ContentControl Content="{Binding SelectedSection}" ContentTemplate="{Binding SelectedSection, Converter={StaticResource ImplicitDataTemplateConverter}}"/>
+
+    </NavigationView>    
 </Page>

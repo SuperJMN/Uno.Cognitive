@@ -11,11 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uno.Cognitive.iOS", "Uno.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uno.Cognitive.UWP", "Uno.Cognitive\Uno.Cognitive.UWP\Uno.Cognitive.UWP.csproj", "{E595962B-3DF7-431A-8C39-47934CD9D124}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uno.Cognitive.Wasm", "Uno.Cognitive\Uno.Cognitive.Wasm\Uno.Cognitive.Wasm.csproj", "{7CFF6CE0-5B77-4E9D-A6E6-5507C3E17242}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uno.Cognitive.Wasm", "Uno.Cognitive\Uno.Cognitive.Wasm\Uno.Cognitive.Wasm.csproj", "{7CFF6CE0-5B77-4E9D-A6E6-5507C3E17242}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Uno.Cognitive\Uno.Cognitive.Shared\Uno.Cognitive.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		Uno.Cognitive\Uno.Cognitive.Shared\Uno.Cognitive.Shared.projitems*{84e8727b-158e-4ffd-b7b7-f0c06d52cc1a}*SharedItemsImports = 4
+		Uno.Cognitive\Uno.Cognitive.Shared\Uno.Cognitive.Shared.projitems*{8961c06d-e941-4826-babe-9d59aa7eba16}*SharedItemsImports = 4
+		Uno.Cognitive\Uno.Cognitive.Shared\Uno.Cognitive.Shared.projitems*{e595962b-3df7-431a-8c39-47934cd9d124}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
