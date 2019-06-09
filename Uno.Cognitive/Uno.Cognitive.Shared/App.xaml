@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Uno.Cognitive"
+    xmlns:shared="using:App2.Shared"
     RequestedTheme="Light">
 
     <Application.Resources>
@@ -19,8 +20,8 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <TextBox Header="Please, enter the URL of an image" Text="{Binding ImageUrl, Mode=TwoWay}" />
-                <Image Grid.Row="1" Source="{Binding ImageUrl}" />
+                <TextBox Header="Please, enter the URL of an image" Text="{Binding ImageUrl, Mode=TwoWay}" shared:Workarounds.UpdateSourceOnLostFocus="True"/>
+                <Image Grid.Row="2" Source="{Binding ImageUrl}" />
             </Grid>
         </DataTemplate>
 

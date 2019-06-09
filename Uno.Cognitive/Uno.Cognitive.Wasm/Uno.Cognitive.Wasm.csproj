@@ -31,8 +31,8 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Uno.ReactiveUI" Version="8.0.0-uno.156" />
-    <PackageReference Include="Uno.UI" Version="1.45.0-dev.1581" />
-    <PackageReference Include="Uno.Wasm.Bootstrap" Version="1.0.0-dev.281" />
+    <PackageReference Include="Uno.UI" Version="1.45.0-dev.1756" />
+    <PackageReference Include="Uno.Wasm.Bootstrap" Version="1.0.0-dev.291" />
     <DotNetCliToolReference Include="Uno.Wasm.Bootstrap.Cli" Version="1.0.0-dev.137" />
   </ItemGroup>
   <Import Project="..\Uno.Cognitive.Shared\Uno.Cognitive.Shared.projitems" Label="Shared" Condition="Exists('..\Uno.Cognitive.Shared\Uno.Cognitive.Shared.projitems')" />
