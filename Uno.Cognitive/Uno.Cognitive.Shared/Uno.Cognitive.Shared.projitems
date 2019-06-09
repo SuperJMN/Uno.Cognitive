@@ -27,6 +27,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)OtherViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SectionViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Workarounds.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
